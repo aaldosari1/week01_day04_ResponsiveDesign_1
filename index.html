@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid CSS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="products">
+      <div>
+        <h4>Black pen</h4>
+        <img src="images/black-pen.jpg" />
+        <div class="product-card">
+          <a
+            href="#"
+            onclick="
+              event.preventDefault();
+              document.getElementById('product-modal-1').showModal();
+            "
+            >Learn More</a
+          >
+        </div>
+        <dialog id="product-modal-1" class="product-modal">
+          <div class="modal-content">
+            <h2>Product Details</h2>
+            <p>
+              A sleek black pen designed for smooth, effortless writing. Its
+              comfortable grip make it ideal for everyday use at home, school,
+              or the office.
+            </p>
+            <button
+              onclick="document.getElementById('product-modal-1').close()"
+            >
+              Close
+            </button>
+          </div>
+        </dialog>
+      </div>
+      <div>
+        <h4>Block of concrete</h4>
+        <img src="images/block-of-concrete.jpg" />
+        <a href="https://www.amazon.sa" target="_blank">Shop now</a>
+      </div>
+      <div>
+        <h4>Brown leather boots</h4>
+        <img src="images/brown-leather-boots.jpg" />
+        <p>Crafted from premium leather</p>
+        <a href="https://www.amazon.sa" target="_blank">Shop now</a>
+      </div>
+      <div>
+        <h4>Orange</h4>
+        <img src="images/orange.jpg" />
+        <p>Sweet & refreshing</p>
+        <a href="https://www.amazon.sa" target="_blank">Shop now</a>
+      </div>
+      <div>
+        <h4>Sun glasses</h4>
+        <img src="images/sun-glasses-1.jpg" />
+        <p>For everyday use</p>
+        <a href="https://www.amazon.sa" target="_blank">Shop now</a>
+      </div>
+      <div>
+        <h4>Pink cup</h4>
+        <img src="images/pink-cup.jpg" />
+        <div class="product-card">
+          <a
+            href="#"
+            onclick="
+              event.preventDefault();
+              document.getElementById('product-modal-2').showModal();
+            "
+            >Learn More</a
+          >
+        </div>
+        <dialog id="product-modal-2" class="product-modal">
+          <div class="modal-content">
+            <h2>Product Details</h2>
+            <p>
+              A pink cup with a clean design, for everyday drinks. Lightweight
+              and easy to handle. Its cheerful color adds a fun touch to your
+              kitchen, desk, or dining space.
+            </p>
+            <button
+              onclick="document.getElementById('product-modal-2').close()"
+            >
+              Close
+            </button>
+          </div>
+        </dialog>
+      </div>
+      <div>
+        <h4>Luxury sun glasses</h4>
+        <img src="images/sun-glasses.jpg" />
+        <p>Durable</p>
+        <a href="https://www.amazon.sa" target="_blank">Shop now</a>
+      </div>
+      <div>
+        <h4>Glass</h4>
+        <img src="images/glass.jpg" />
+        <a href="https://www.amazon.sa" target="_blank">Shop now</a>
+      </div>
+    </div>
+  </body>
+</html>
